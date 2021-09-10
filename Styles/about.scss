@@ -1,0 +1,237 @@
+@import "Colors";
+
+$alignment:center;
+@media (max-width:385px){
+    .title{
+        height: 170px;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+    }
+}
+@media (min-width:386px){
+    .title{
+        height: 170px;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: left;
+    }
+}
+@media (max-width:991px){
+    .about-div3{
+        height: auto;
+        .aboutimgDiv{
+            height: 238px;
+        }
+        .content{
+            width: 95%;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media (max-width:649px){
+    .about-main{
+        padding-top: 60%;
+    }
+    .about-div2{
+        padding-top:60%
+    }
+   
+}
+@media (min-width:650px){
+    .about-main{
+        padding: 12%;
+    }
+    .about-div2{
+        padding:15%;
+        // padding-top:50px;
+    }
+}
+@media (min-width:992px){
+    .about{
+        .container{
+            width: 992px;
+        }
+        .about-main{
+            padding: 12%;
+        }
+        .about-div3{
+            height: 688px;
+            .aboutimgDiv{
+                height: 688px;
+            }
+            .content{
+                height: 155px;
+                width: 87%;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+.about{
+    .expandMore{
+        position: absolute;
+        bottom: 50px;
+    }
+    .about-main{
+        text-align: $alignment;
+        background-image: url('../Assets/about-top.png');
+        width: 100%;
+        height:624px;
+        position: relative;
+        background-attachment: inherit;
+        background-position: center;
+         background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .content{
+            height: 257px;
+            width: 100%;
+            opacity: 0.84;
+            background-color: #0E7ABF;
+            padding: 30px;
+            padding-top: 13%;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.9;
+            }
+
+            .title{
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                font-weight: 300;
+             
+            }
+        }
+    }
+    .about-div2{
+        height: 671px;
+        width: 100%;
+        background-image: url(../Assets/bg_2.png);
+        background-attachment: inherit;
+        background-position: center;
+         background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        text-align: $alignment;
+        .content{
+            height: 257px;
+            width: 100%;
+            opacity: 0.84;
+            background-color:  #91BF4C;
+            padding: 30px;
+            padding-top: 13%;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.9;
+            }
+            .title{
+                // height: 170px;
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                color: #FFFFFF;
+                // font-size: 22px;
+                // letter-spacing: 0;
+                // line-height: 30px;
+                font-weight: 300;
+                text-align: left;
+            }
+        }
+    }
+    .about-div3{
+        width: 100%;
+        text-align: $alignment;
+        position: relative;
+        .aboutimgDiv{
+            background-image: url(../Assets/bg_2.png);
+            background-attachment: inherit;
+            background-position: right;
+            //  background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .aboutHistory{
+            box-sizing: border-box;
+            height: 688px;
+            border: 1px solid #979797;
+            background-color: #0E7ABF;
+            padding: 8%;
+            .content{
+                color: #FFFFFF;
+                letter-spacing: 0;
+                text-align: left;
+                font-weight: 300;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+            }
+        }
+    }
+    .about-div4{
+        height: auto;
+        background-color: #ffffff;
+        padding: 3%;
+            .row{
+                justify-content: center;
+            }
+        .team{
+            height: 259px;
+            text-align: $alignment;
+            margin-bottom: 20px;
+            position: relative;
+            
+            img{
+                height: 172px;
+                width: 225px;
+                margin-left: auto;
+                margin-right: auto;
+                object-fit: cover;
+            }
+            .body{
+                height: 80.5px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #FFFFFF;
+                box-shadow: 0 0 12px 1px rgba(37,37,37,0.41);
+                padding: 4%;
+                .name{
+                    height: 31px;
+                    color: #0568B2;
+                    font-size: 22px;
+                    letter-spacing: 0;
+                    line-height: 33px;
+                    text-align: center;
+                    margin-bottom: 0px;
+                }
+                .imgDiv{
+                    background-size: cover;
+                    height: 30px;
+                    width: 49px;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    bottom: 6px;
+                    left: -8px;
+                    background-image: url(../Assets/berry.png);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                }
+                .design{
+                    height: 26px;
+                    color: #969B9D;
+                    font-size: 14px;
+                    letter-spacing: 0;
+                    line-height: 26px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

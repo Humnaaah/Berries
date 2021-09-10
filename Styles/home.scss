@@ -1,0 +1,90 @@
+
+$alignment:center;
+
+@media (max-width:991px) {
+    .home-div2{
+        padding-top: 20px;
+        height: 629px;
+      }
+}
+@media (min-width:992px) {
+    .home-div2{
+        padding-top: 9%;
+        height: 697px;
+      }
+      .home-div3{
+          padding-top: 3%;
+      }
+}
+.home-main{
+    background-image: url('../Assets/desktop/bg_main.png');
+    width: 100%;
+    height:588px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .main-content{
+        position: absolute;
+        height: 250px;
+        width: 100%;
+        background-color: #000c25b5;
+        bottom: 0;
+        text-align: $alignment;
+        padding:5px;
+     
+    }
+}
+.home-div2{
+    width: 100%;
+    background-image: url(../Assets/desktop/bg_2.png);
+    background-attachment: fixed;
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: $alignment;
+    // background-position: center;
+}
+.home-div3{
+    height: 672px;
+    width: 100%;
+    background:rgb(14, 122, 191);
+    text-align: $alignment;
+    .svgDiv{
+        margin-left: auto;
+        margin-left: auto;
+        // transform: scaleY(-1);
+    }
+}
+.home-div4{
+    // height: 720px;
+    height: 785px;
+    width: 100%;
+    background-color: #EFF0F1;
+    padding-top: 15px;
+    
+}
+.car{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+    width: 600px;
+    height:271px;
+    overflow:hidden;
+    animation: moving 10s linear -2s infinite;
+  }
+  
+  .carbody{
+    animation: carmove 3.1s infinite linear;
+    background: url('../Assets/Truck_structure.svg') 0 0;
+    background-size: cover;
+    height: 271px;
+    position: relative; 
+    width: 600px;
+    z-index: 125;
+  }
+  
